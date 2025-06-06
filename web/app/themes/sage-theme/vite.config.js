@@ -1,12 +1,23 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite';
 import laravel from 'laravel-vite-plugin'
+
+// Add these imports for path resolution
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+// Calculate __dirname for ES module context
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 import { wordpressPlugin, wordpressThemeJson } from '@roots/vite-plugin';
 
 export default defineConfig({
   base: '/app/themes/sage/public/build/',
   plugins: [
-    tailwindcss(),
+    tailwindcss({
+      // Explicitly point to the Tailwind config file
+      config: path.resolve(__dirname, 'tailwind.config.js') // Point to .js file
+    }),
     laravel({
       input: [
         'resources/css/app.css',

@@ -1,3 +1,31 @@
 @import "tailwindcss" theme(static);
+
+@layer base {
+  body {
+    @apply font-sans text-gray-800 bg-white;
+  }
+
+  a {
+    @apply text-blue-600 hover:underline;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-gray-900 font-semibold mb-4; /* Added mb-4 for spacing below headings */
+  }
+
+  p {
+    @apply mb-4;
+  }
+
+  /* Add other base styles if needed, for example for lists: */
+  ul, ol {
+    @apply mb-4 ml-6; /* Basic list styling */
+  }
+  li {
+    @apply mb-2;
+  }
+}
+
+/* Keep Sage/Bud specific lines if they were there and are needed, otherwise remove */
 @source "../views/";
 @source "../../app/";

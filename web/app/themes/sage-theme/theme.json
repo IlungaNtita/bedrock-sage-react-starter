@@ -4,10 +4,11 @@
   "version": 3,
   "settings": {
     "layout": {
-      "contentSize": "48rem"
+      "contentSize": "80rem",
+      "wideSize": "100rem"
     },
     "background": {
-      "backgroundImage": true
+      "backgroundImage": false
     },
     "color": {
       "custom": false,
@@ -16,7 +17,8 @@
       "defaultDuotone": false,
       "defaultGradients": false,
       "defaultPalette": false,
-      "duotone": []
+      "duotone": [],
+      "palette": []
     },
     "custom": {
       "spacing": {},
@@ -31,7 +33,9 @@
     },
     "typography": {
       "defaultFontSizes": false,
-      "customFontSize": false
+      "customFontSize": false,
+      "fontFamilies": [],
+      "fontSizes": []
     }
   }
 }
