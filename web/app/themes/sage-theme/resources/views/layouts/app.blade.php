@@ -12,6 +12,7 @@
   <body @php(body_class())>
     @php(wp_body_open())
 
+    <h2>Hello Earth</h2>
     <div id="app">
       <a class="sr-only focus:not-sr-only" href="#main">
         {{ __('Skip to content', 'sage') }}

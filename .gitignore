@@ -8,6 +8,9 @@ web/app/uploads/*
 !web/app/uploads/.gitkeep
 web/app/cache/*
 .yarn
+.yarnrc.yml
+.pnp.cjs
+.pnp.loader.mjs
 
 # WordPress
 web/wp

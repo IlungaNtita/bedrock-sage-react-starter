@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 import { wordpressPlugin, wordpressThemeJson } from '@roots/vite-plugin';
 
 export default defineConfig({
-  base: '/app/themes/sage/public/build/',
+  base: '/app/themes/sage-theme/public/build/',
   plugins: [
     tailwindcss({
       // Explicitly point to the Tailwind config file
@@ -22,6 +22,7 @@ export default defineConfig({
       input: [
         'resources/css/app.css',
         'resources/js/app.ts',
+        'resources/js/react-loader.ts',
         'resources/css/editor.css',
         'resources/js/editor.ts',
       ],
